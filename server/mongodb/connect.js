@@ -4,15 +4,14 @@ import mongoose from 'mongoose';
 
 const connectDB = (url) => {
 
-  mongoose.set('strictQuery', true)
+  mongoose.set('strictQuery', true);
 
   mongoose.connect(url,{ useNewUrlParser: true,useUnifiedTopology: true })
       .then(() => console.log('connected to mongo'))
     .catch((err) => {
       console.error('failed to connect with mongo');
       console.error(err);
-      // mongoose.set('useFindAndModify', false)
-      // process.exit(1) 
+     
     });
 };
 
