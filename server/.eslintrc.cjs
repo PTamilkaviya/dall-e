@@ -1,19 +1,18 @@
+// eslint-disable-next-line linebreak-style
 module.exports = {
-    env: {
-      browser: true,
-      es2021: true,
-    },
-    extends: [
-      'airbnb-base',
-    ],
-    parserOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-    },
-    rules: {
-      "indent": "off",
-      'linebreak-style': ['error', 'windows'],
-      'no-console': 'off',
-        'import/extensions': 'off',
-    },
-  };
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: [
+    'airbnb-base',
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  rules: {
+    'no-console': 'off',
+    'import/extensions': 'off',
+  },
+};
